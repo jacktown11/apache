@@ -1,0 +1,12 @@
+{
+  "name": "CSS_ZIP",
+  "version": "1.0.0",
+  "description":"CSS压缩",
+  "engines":{
+  	"node":">=0.8.0"
+  },
+  "devDependencies":{
+    "grunt": "~1.0.0",
+    "grunt-contrib-cssmin":"x"
+  }
+}

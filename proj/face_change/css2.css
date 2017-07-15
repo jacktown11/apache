@@ -1,0 +1,51 @@
+
+body{
+	margin: 40px 8px 8px 8px;
+	background: url(bg2.gif)  left top repeat;
+	font-family: arial;	
+}
+form{
+	font-size: 14px;
+	color: white;
+	width: 600px;
+	padding: 20px;
+	margin: 0 auto;
+	border: 4px solid #cccccc;
+	background: rgba(102,153,153,0.7);
+}
+header, ul li{
+	padding: 0 0 10px 10px;
+}
+header{
+	font-size: 18px;
+	font-weight: bold;
+	height: 22px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #cccccc;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul label{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+ul input{
+	width: 500px;
+	height: 30px;
+}
+ul textarea{
+	width: 498px;
+	height: 120px;
+	overflow: auto;
+}
+li.submit{
+	text-align: center;
+}
+li.submit input{
+	width: 120px;
+	height: 40px;
+}

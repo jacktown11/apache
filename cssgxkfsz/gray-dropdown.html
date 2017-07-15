@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>gray-dropdown</title>
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+
+		.gray-dropdown{
+			width: 150px;
+			height: 50px;
+			border-radius: 5px;
+			background: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0,#ffffff),color-stop(100%,#e9e9e9));
+			background: -webkit-linear-gradient(#ffffff,#e9e9e9);
+			background: -o-linear-gradient(#ffffff,#e9e9e9);
+			background: -moz-linear-gradient(#ffffff,#e9e9e9);
+			background: linear-gradient(#ffffff,#e9e9e9);			
+			/*ie compatibility 好像要插件，直接用好像不行*/
+			-pie-background: linear-gradient(#ffffff,#e9e9e9);
+		}
+		
+	</style>
+</head>
+<body>
+	<button class="gray-dropdown" type="button"></button>	
+	<h1 id="home"><a href="index.html">Home</a></h1>
+
+</body>
+</html>

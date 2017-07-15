@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>opacity</title>
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+
+		img{
+			position: relative;
+			top: 100px;
+		}
+		img#opacity{
+			filter: Alpha(Opacity=40);
+			/*compatibility foe lte IE 8*/
+			opacity: 0.4;
+		}
+	</style>
+</head>
+<body>
+	<img id="base" src="images/surf_s.jpg" alt="surf image">
+	<img id="opacity" src="images/surf_s.jpg" alt="surf image">
+	<p>
+		Fusce ut lacus ac est rutrum iaculis. Pellentesque pellentesque ut odio eget porttitor. Suspendisse non auctor enim, ac auctor velit. Proin sit amet sodales augue. Cras sed orci a ex lobortis viverra. Mauris maximus, arcu nec consequat posuere, nisi arcu tincidunt dolor, vel iaculis lectus tortor id ipsum. Aliquam vehicula volutpat molestie. Nullam in lobortis libero, a condimentum arcu. Etiam at enim quis ante dignissim suscipit. Vivamus nec risus lacus. Aliquam lobortis tellus blandit finibus egestas. Vestibulum quis dapibus odio. Aenean non nisl vel velit porttitor hendrerit. Sed ac quam sed dolor mattis ultricies at non lectus. Donec nulla ligula, dignissim sed rhoncus vel, efficitur sit amet nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+	</p>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+
+</body>
+</html>

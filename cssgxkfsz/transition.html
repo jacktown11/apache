@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scale</title>
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+		div.scale>div{
+			width: 400px;
+			height: 200px;
+			background-color: green;
+			padding: 0;
+			margin: 20px auto;
+			border: 1px solid black;
+		}
+		div.scale>div:hover{
+			width: 800px;
+			height: 400px;
+		}
+		div.scale>div:first-child{
+			-ms-transition: width 2s;
+			-webkit-transition: width 2s;
+			-o-transition: width 2s;
+			-moz-transition: width 2s;
+			transition: width 2s;			
+		}
+		div.scale>div:nth-child(2){
+			-ms-transition: width 2s ease-in-out 1s;
+			-webkit-transition: width 2s ease-in-out 1s;
+			-o-transition: width 2s ease-in-out 1s;
+			-moz-transition: width 2s ease-in-out 1s;
+			transition: width 2s ease-in-out 1s;			
+		}
+		div.scale>div:nth-child(3){
+			-ms-transition: all 2s ease-in-out 1s;
+			-webkit-transition: all 2s ease-in-out 1s;
+			-o-transition: all 2s ease-in-out 1s;
+			-moz-transition: all 2s ease-in-out 1s;
+			transition: all 2s ease-in-out 1s;			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="scale">
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-reflect</title>
+	<style>
+		h1{
+			border: 1px dotted black;
+			margin: 80px auto;
+		}
+		h1:nth-of-type(1){
+			-webkit-box-reflect: below 10px;
+			background-color: #cc0000;
+		}
+		h1:nth-of-type(2){
+			background-color: #008800;
+			-webkit-box-reflect: below 0px -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,0.5));
+			/*transparent相当于rgba(0,0,0,0)*/
+		}
+	</style>
+</head>
+<body>
+	<h1>前端开发ipsum dolor sit amet, consectetur adipisc</h1>
+	<h1>前端开发前端开发ipsum dolor sit amet, consectetur adipisc</h1>
+
+	<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique leo odio, ac efficitur massa sollicitudin ut. Donec maximus cursus elit, id porttitor tortor iaculis sit amet. Ut vel mauris elit. Aenean non purus magna. Praesent id diam purus. Curabitur aliquam ligula a ligula euismod volutpat. Integer quis suscipit metus. Etiam magna augue, accumsan ac accumsan sit amet, auctor eu turpis. Integer pulvinar, arcu fermentum viverra varius, magna lectus dapibus sem, vitae egestas nulla turpis vel dui. Vivamus vehicula eget tortor sed vulputate. Pellentesque diam m</p>
+</body>
+</html>

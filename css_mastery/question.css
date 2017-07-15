@@ -1,0 +1,57 @@
+div#personal_footer{
+	
+}
+
+div#personal_footer *{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+div#personal_footer{
+	clear: both;
+	padding-top: 8em;
+	width: 800px; 
+	margin: 0 auto;
+	border: none;
+
+	font: medium/1 '微软雅黑',sans-serif;
+}
+div#personal_footer a{
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1;
+	text-decoration: none;
+	color: #008800;
+
+	display: block;
+	background: #ccc;
+	text-align: center;
+	text-indent: 0;
+	padding: 0;
+	width: 20%;
+	height: 1em;
+	margin: 0 40%;
+}
+div#personal_footer h1{
+	font-size: 1.1em;
+	margin-bottom: 0.5em;
+}
+div#personal_footer ul{
+	padding: 0 2em;
+	margin: 0 0 1em 0;
+	border: 1px dotted #ccc;
+}
+div#personal_footer ul li{
+	list-style-type: none;
+	background: none;
+	padding: 0.3em;
+	margin: 0;
+}
+div#personal_footer ul li:nth-child(2n-1){
+	font-family: '楷体',sans-serif;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding-top: 0.8em;
+	text-indent: -1em;
+}

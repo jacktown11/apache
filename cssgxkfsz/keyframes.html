@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>keyframes</title>
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+		div.keyframes>div{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+			animation: myfirst 5s infinite alternate;
+			-webkit-animation:myfirst 5s infinite alternate;
+			margin: 20px auto;
+			border: 1px solid black;
+		}
+		@keyframes myfirst{
+			0% {background: red;left:0px;top: 0px;}
+			25% {background: red;left:200px;top: 0px;}
+			50% {background: red;left:200px;top: 200px;}
+			75% {background: red;left:0px;top: 200px;}
+			100% {background: red;left:0px;top: 0px;}
+		}
+		@keyframes myfirst{
+			0% {background: red;left:0px;top: 0px;}
+			25% {background: red;left:200px;top: 0px;}
+			50% {background: red;left:200px;top: 200px;}
+			75% {background: red;left:0px;top: 200px;}
+			100% {background: red;left:0px;top: 0px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="keyframes">
+		<div></div>
+	</div>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+</body>
+</html>

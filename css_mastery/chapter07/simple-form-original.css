@@ -1,0 +1,60 @@
+
+body {
+	font: 62.5%/1 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+form {
+  font-size: 1.4em;
+	width: 30em;
+}
+
+
+/* fieldset styling */
+fieldset {
+	margin: 1em 0; /*  space out the fieldsets a little*/
+	padding: 1em;
+	border : 1px solid #ccc;
+}
+
+/* legend styling */
+legend {
+	font-weight: bold;
+}
+
+form div {
+	padding: 0.4em 0;
+}
+
+
+/* style for  labels */
+label {
+	display: block;
+}
+
+/* style for required labels */
+label .required {
+	font-size: 0.75em;
+	color:#760000;
+}
+
+input {
+  width: 20em;
+}
+
+textarea {
+	width: 100%;
+	height: 10em;
+}
+
+input.radio, input.submit {
+  width: auto;
+}
+
+#remember-me .radio {
+	margin-right: 1em;
+}
+
+/* style form elements on focus */
+input[type="text"]:focus, textarea:focus {
+	background: #ffc;
+}

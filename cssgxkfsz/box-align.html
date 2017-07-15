@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-orient</title>
+	
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+		body{
+			font-size: 30px;
+		}
+		.container1{
+			width: 300px;
+			height: 300px;
+			margin: 30px;
+			display: -webkit-box;
+			-webkit-box-align: baseline;
+			-o-box-align: baseline;
+			-moz-box-align: baseline;
+			-ms-box-align: baseline;
+			box-align: baseline;
+		}
+		.div1{
+			padding: 1em;
+			height: 100px;
+			background-color: red;
+			font-size: 25px;
+		}
+		.main{
+			padding: 1em;
+			background-color: green;
+		}
+		.div2{
+			padding: 1em;
+			height: 200px;
+			background-color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container1">
+		<div class="div1">1</div>
+		<div class="main">2</div>
+		<div class="div2">3</div>
+	</div>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+
+</body>
+</html>

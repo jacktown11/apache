@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tab12-6-2</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.0.2/css/bootstrap.css" rel="stylesheet">
+	<style>
+		h1#home{
+			font-size: 30px;
+			margin: 10px auto;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#home" data-toggle="tab">首页</a></li>
+		<li><a href="#profile" data-toggle="tab">最新</a></li>
+		<li><a href="#messages" data-toggle="tab">热门</a></li>
+		<li><a href="#settings" data-toggle="tab">排行</a></li>
+	</ul>
+
+	<div class="tab-content">
+		<div class="active tab-pane" id="home">
+			<p>this is paragraph xxx 1</p>
+		</div>
+		<div class="tab-pane" id="profile">
+			<p>this is paragraph xxx 2</p>
+		</div>
+		<div class="tab-pane" id="messages">
+			<p>this is paragraph xxx 3</p>
+		</div>
+		<div class="tab-pane" id="settings">
+			<p>this is paragraph xxx 4</p>
+		</div>
+	</div>
+
+	<h1 id="home"><a href="index.html">Home</a></h1>
+	<script src="http://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.0.2/js/bootstrap.js"></script>
+</body>
+</html>

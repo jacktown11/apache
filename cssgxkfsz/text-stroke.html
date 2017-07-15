@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>text-shadow</title>
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+		h1{
+			border: 1px dotted black;
+			margin: 40px auto;
+			padding: 10px;
+			color: white;
+		}
+		h1#str{
+			-webkit-text-stroke: 1px red;
+			text-stroke: 1px red;
+		}
+		h1#sha{
+			text-shadow: 1px 0 0 red,0 1px 0 red,-1px 0 0 red,0 -1px 0 red;
+		}
+
+	</style>
+</head>
+<body>
+	<h1 id="str">text-stroke：前端开发ipsum consectetur adipisc</h1>
+	<h1 id="sha">text-shadow替代：前端开发ipsum consectetur adipisc</h1>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+</body>
+</html>

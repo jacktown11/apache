@@ -1,0 +1,90 @@
+body {
+	font-family: "myriad pro", arial, helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.125em; /* Baseline grid of 18px */
+}
+
+
+/* tables may still need 'cellspacing="0"' in the markup */
+table.cal {
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+	border-bottom: 1px solid #666;
+}
+
+.cal caption {
+	font-size:1.3em;
+	padding-top: 0.692em; /* 9px */
+	padding-bottom: 0.692em; /* 9px */
+}
+
+
+.cal thead th {
+	border-top: 3px solid #666;
+	border-bottom: 3px solid #666;
+	padding-top: 0.692em; /* 9px */
+	padding-bottom: 0.692em; /* 9px */
+}
+
+
+
+/* @group Header */
+	
+.cal caption a:link,
+.cal caption a:visited,
+.cal caption a:hover,
+.cal caption a:active,
+.cal caption a:focus {
+	background-color: #CCC;
+	text-decoration: none;
+	color: black;
+	padding: 0 0.2em;
+}
+
+.cal caption a:hover,
+.cal caption a:active,
+.cal .caption a:focus {
+	background-color: blue;
+	color: white;
+}
+	
+/* @end */
+	
+/* @group Days */
+	
+.cal tbody {
+	color: #999;
+}
+
+.cal tbody a:link,
+.cal tbody a:visited,
+.cal tbody a:hover,
+.cal tbody a:focus,
+.cal tbody a:active {
+	display: block;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	padding: 0.385em 0.692em 0.308em 0.692em; /* 5px 9px 4px 9px */
+}
+
+.cal tbody a:hover,
+.cal tbody a:focus,
+.cal tbody a:active {
+	/*outline: 1px solid #ccc;*/
+	background-color: #CCC;
+	color: black;
+}
+
+.cal tbody .selected a:link,
+.cal tbody .selected a:visited,
+.cal tbody  .selecteda:hover,
+.cal tbody  .selected a:focus,
+.cal tbody .selected a:active {
+	background-color: blue;
+	color: white;
+}
+
+	/* @end */
+

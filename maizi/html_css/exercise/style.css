@@ -1,0 +1,297 @@
+/*通用样式*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font: 14px/24px '微软雅黑','宋体','Helvetica Neue',Helvetica, Arial ,sans-serif;
+}
+.wp{
+	width: 960px;
+	margin: 0 auto;
+}
+.z{
+	float: left;
+}
+.y{
+	float: right;
+}
+.cl{
+	clear: both;
+}
+img{
+	border: none;
+}
+
+
+.top{
+	width: 100%;
+	height: 24px;
+	line-height: 24px;
+	color: #d8d8d8;
+	background: #303030;
+}
+
+.top a{
+	color: #d8d8d8;
+	text-decoration: none;
+}
+
+.top span{
+	margin-right: 15px;
+}
+.top span.mr_0{
+	margin: 0;
+}
+.top a:hover{
+	color: #ff6600;
+}
+/*logos*/
+.logos{
+	height: 59px;
+	margin: 15px 0;
+}
+/*搜索*/
+table{
+	border-collapse: collapse;
+}
+.sousuo{
+	width: 330px;
+	height: 41px;
+	margin-top: 8px;
+}
+.sousuo td{
+	height: 41px;
+}
+.s_z{
+	width: 6px;
+	background: url(images/s_z.jpg) no-repeat;
+}
+.s_c{
+	width: 240px;
+	background: url(images/s_c.jpg) repeat-x;
+}
+.s_y{
+	width: 78px;
+	background: url(images/s_r.jpg) no-repeat;
+}
+.s_c input{
+	height: 35px;
+	width: 200px;
+	line-height: 35px;
+	border: 0;
+	margin-top: 2px;
+	outline: none;
+}
+
+.s_y button{
+	width: 78px;
+	height: 41px;
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+.dianhua{
+	height: 59px;
+    line-height: 59px;
+    margin-left: 15px;
+}
+.dianhua span{
+	font-size: 26px;
+	color:darkred;
+}
+
+/*导航*/
+.nav{
+	height: 39px;
+	width: 100%;
+	background: url(images/nav_bg.jpg) repeat-x;
+}
+.nav li{
+	list-style: none;
+	float: left;
+	line-height: 39px;
+	padding: 0 28px;
+}
+.nav a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+.nav li.a, .nav li:hover{
+	background: url(images/nav_hover.jpg) repeat-x;
+}
+
+/*center*/
+.ad{
+	margin-bottom: 10px;
+}
+.tit{
+	padding-bottom: 8px;
+	border-bottom: solid 1px darkred;
+	position: relative;
+	margin-bottom: 10px;
+	/*zoom:1;*/
+	/*如果不加入此属性，ie6中含有more>>的span的定位会坏掉*/
+}
+.tit span{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.tit a{
+	color: darkred;
+	text-decoration: none;
+}
+.jianjie{
+	width:540px;
+	height: 360px;
+	margin-right: 20px;
+}
+.jj_c img{
+	float: left;
+	margin:0 10px 10px 0;
+}
+.jj_c p{
+	color: #616161;
+	text-indent: 24px;
+}
+.xinwen{
+	width: 400px;
+	height:360px;
+}
+.xinwen_c{
+
+}
+.xinwen_c li{
+	list-style: none;
+	height: 24px;
+	line-height: 24px;
+	position: relative;
+	padding-left: 15px;
+	background: url(images/list_bg.jpg) no-repeat center left;
+	margin-bottom: 6px;
+}
+.xinwen_c li.a{
+	background: none;
+	padding: 0;
+	height: 76px;
+}
+.xinwen_c span{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #888888;
+	font-size: 12px;
+}
+.xinwen_c h3{
+	font-weight: normal;
+	font-size: 14px;
+}
+.xinwen_c p{
+	font-size: 12px;
+	color:#888888;
+	text-indent: 24px;
+}
+.xinwen_c a{
+	color: #616161;
+	text-decoration: none;
+}
+.xinwen_c li img{
+	float: left;
+	margin: 0 10px 10px 0;
+
+}
+.chanpin{
+	width:100%;
+	height: 300px;
+}
+.cp_c{
+
+}
+
+.cp_c li{
+	float: left;
+	list-style: none;
+	margin: 0 10px 10px 0;
+	height: 96px;
+	width: 151px;
+	overflow: hidden;
+	position: relative;
+}
+.cp_c li img{
+	float: left;
+}
+.cp_c li span{
+	font-size: 14px;
+	height: 20px;
+	width: 131px;
+	padding: 0 10px;
+	color: #ffffff;
+	background: darkred;
+	overflow: hidden;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+.cp_c li  a:hover span{
+	display: block;
+}
+.cp_c li.mr_0{
+	margin-right: 0;
+}
+
+/*footer*/
+.footer{
+	height: 103px;
+	width: 100%;
+	background: url(images/footer_bg.jpg) repeat-x;
+}
+.footer_top{
+	height: 80px;
+	line-height: 80px;
+	color: #ffffff;
+
+}
+.footer_top .z{
+	font-size: 16px;
+}
+.footer_top a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.footer_foot p{
+	color: #ff6600;
+
+}
+.footer_foot a{
+	color: #888888;
+	text-decoration: none;
+	margin-right: 10px;
+}
+.footer_foot a:hover{
+	color: #ff6600;
+}
+
+#toolbar{
+	width: 40px;
+	height: 205px;
+	background-color: #ffffff;
+
+	position: fixed;
+	right: 60px;
+	bottom: 165px;
+}
+
+#toolbar li{
+	position: relative;
+	list-style: none;
+	width:40px;
+	height: 40px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>face change</title>
+	<link id="css_link" rel="stylesheet" type="text/css" href="css1.css">
+	<script type="text/javascript" href="change.js"></script>
+</head>
+<body>
+	<form method="get" action="www.baidu.com">
+		<header>
+			<label for="pf">可以换肤的提交框：</label>
+			<input type="button" name="pf" value="皮肤1" onclick="document.getElementById('css_link').href='css1.css';">
+			<input type="button" name="pf" value="皮肤2" onclick="document.getElementById('css_link').href='css2.css';">
+		</header>
+		<ul>
+			<li>
+				<label for="name">输入姓名：</label><input type="text" name="name">
+			</li>
+			<li>
+				<label for="">输入密码：</label><input type="password">
+			</li>
+			<li>
+				<label for="">请您留言：</label><textarea></textarea>
+			</li>
+			<li class="submit">
+				<input type="submit" value="提交">
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

@@ -1,0 +1,158 @@
+
+body {
+	font: 62.5%/1 "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+form {
+  font-size: 1.4em;
+  width: 45em;
+}
+
+/* fieldset styling */
+fieldset {
+	margin: 1em 0; /*  space out the fieldsets a little*/
+	padding: 1em;
+	border : 1px solid #ccc;
+	background-color:#F5F5F5
+}
+
+/* legend styling */
+legend {
+	font-weight: bold;
+}
+
+form div {
+  position: relative;
+	width: 100%;
+	padding: 0.4em 0;
+	clear: both;
+}
+
+/* style for  labels */
+label {
+	float: left;
+	clear: left;
+	width: 10em;
+}
+
+/* style for required labels */
+label .required {
+	font-size: 0.83em;
+	color:#760000;
+}
+
+/* style error messages */
+label .feedback {
+	position: absolute;
+	left: 31em;
+    right: 0;
+	top: 0.5em;
+	font-weight: bold;
+	color:#760000;
+	padding-left: 20px;
+	background: url(img/error.png) no-repeat left top;
+}
+
+/* :KLUDGE: Explicitly set the width for IE6- */
+* html .feedback{
+  width: 10em;
+}
+
+input {
+  width: 20em;
+  font-size: inherit;
+}
+
+input[type="text"], textarea {
+	border-top: 2px solid #999;
+	border-left: 2px solid #999;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+input.radio, input.checkbox, input.submit {
+  width: auto;
+}
+
+/* style form elements on focus */
+input:focus, textarea:focus {
+	background: #ffc;
+}
+
+textarea {
+	width: 100%;
+	height: 10em;
+}
+
+/* Date of Birth form styling */
+
+#monthOfBirthLabel, #yearOfBirthLabel {
+  text-indent: -1000em;
+	width: 0;
+}
+
+#dateOfBirth {
+  width: 3em;
+	margin-right: 0.5em;
+}
+
+#monthOfBirth {
+  width: 10em;
+	margin-right: 0.5em;
+}
+
+#yearOfBirth {
+  width: 5em;
+}
+
+/* Color form styling */
+#favoriteColor {
+  margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+}
+
+#favoriteColor h2 {
+  width: 10em;
+	float: left;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+#favoriteColor .col {
+  width: 8em;
+	float: left;
+	clear: none;
+}
+
+#favoriteColor label {
+	float: none;
+}
+
+#remember-me .radio {
+	margin-right: 1em;
+}
+
+/* Button styling */
+
+button {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #989898;
+   -moz-border-radius: 6px;
+   -webkit-border-radius: 6px;
+   border-radius: 6px;
+   background: url(img/button-bg.png) #c5e063 bottom left repeat-x;
+  -moz-box-shadow: 2px 2px 2px #ccc;
+  -webkit-box-shadow: 2px 2px 2px #ccc;
+  box-shadow: 2px 2px 2px #ccc;
+   color: #fff;
+   font-size: 26px;
+   font-weight: bold;
+   text-shadow: 1px 1px 1px #666;
+}

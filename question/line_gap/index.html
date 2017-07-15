@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<script type="text/javascript">
+		
+	</script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+/*		p{
+			float: left;
+			width: 260px;
+			margin-right: 10px;
+			background-color: green;
+
+			font-family: Arial,sans-serif;
+			font-size: 40px;*/
+			/*line-height: 35px;
+			/*line-height: 40px;*/
+			/*line-height: 44px;*/
+			/*line-height: 48px;*/
+/*		}*/
+		p.first{
+			float: left;
+			width: 800px;
+			margin: 20px;
+			background-color: green;
+
+			font-family: Arial,sans-serif;
+			font-size: 40px;
+
+			/*line-height: 45px;*/
+		}
+	
+		span{
+			background-color: #ccc;
+			line-height: 20px;
+			border-bottom: 1px dashed black;
+		}
+
+		/*注意代理对内容区的定义不是简单的em框，所以可能会大于font-size的值*/
+		img.relative{
+			vertical-align: top;
+			position: relative;
+			height: 26px
+		}
+		img{
+			border: none;
+			width: 10px;
+			height: 10px;
+		}
+		img.img1{
+			vertical-align: top;
+		}
+		img.img2{
+			vertical-align: text-top;
+		}
+		img.img3{
+			vertical-align: baseline;
+		}
+		img.img4{
+			vertical-align: text-bottom;
+		}
+		img.img5{
+			vertical-align: bottom;
+		}
+		
+	</style>
+</head>
+<body>
+	<p class="first"><span>xxxxxx xxxxxxxxxxxxxx xxxxxxxxxx xxxxx xxxxxxxxxxxx xxxxxxxxxx xxxxxtesttest testte<img class="img1" src="test.jpg">x<img class="img2" src="test.jpg">x<img class="img3" src="test.jpg">x<img class="img4" src="test.jpg">x<img class="img5" src="test.jpg">s<img class="relative" src="test.jpg">tabcde fghijklm nopqrstuvwxyzsttes ttesttesttesttestt estte sttesttesttest</span></p>
+<!-- 	<p><span>test test a <img class="img1" src="test.jpg">test test TOP </span></p>
+	<p><span>test test a <img class="img2" src="test.jpg">test test TEXTTOP </span></p>
+	<p><span>test test a <img class="img3" src="test.jpg">test test BASELINE </span></p>
+	<p><span>test test a <img class="img4" src="test.jpg">test test TEXTBOTTOM </span></p>
+	<p><span>test test a <img class="img5" src="test.jpg">test test BOTTOM </span></p> -->
+</body>
+</html>
+
+
+<!-- 
+ <!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>image</title>
+    <style type="text/css">
+    	div{
+    		background-color: green;
+    	}
+        span {
+        	background-color: #ccc;
+            font-family: "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+            font-size: 16px;
+            line-height: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>行内元素</span>
+    </div>
+</body>
+</html> -->

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bg-origin-clip</title>
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+
+		div#base,
+		div#bg-origin>div,
+		div#bg-clip>div{
+			width: 25%;
+			margin: 1%;
+			padding: 1%;
+			border: 8px dashed red;
+
+			background-color: yellow;
+			background-image: url(images/surf_s.jpg);
+			background-repeat: no-repeat;
+		}
+		div#bg-origin div,
+		div#bg-clip div{
+			float: left;
+		}
+		div#bg-origin:after,
+		div#bg-clip:after{
+			display: block;
+			content: "";
+			height: 0;
+			clear: both;
+		}
+		div#bg-origin div:nth-of-type(1){
+			background-origin: border-box;
+		}
+		div#bg-origin div:nth-of-type(2){
+			background-origin: padding-box;
+		}
+		div#bg-origin div:nth-of-type(3){
+			background-origin: content-box;
+		}
+		div#bg-clip div:nth-of-type(1){
+			background-clip: broder-box;
+		}
+		div#bg-clip div:nth-of-type(2){
+			background-clip: padding-box;
+		}
+		div#bg-clip div:nth-of-type(3){
+			background-clip: content-box;
+		}
+
+	</style>
+</head>
+<body>
+	<p>base:(The default values are padding-box and border-box)</p>
+	<div id="base">Fusce ut lacus ac est rutrum iaculis. Pellentesque pellentesque ut odio eget porttitor. Suspendisse rit. Sed ac quam sed dolor mattis ultricies at non lectus. Donec nulla ligula, dignissim sed rhoncus vel, efficitur sit amet magnis dis parturient montes, nascetur ridiculus mus.</div>
+	<div id="bg-origin">
+		<p>background origin:</p>
+		<div>Fusce ut lacus ac est rutrum iaculis. Pellentesque pellentesque ut  vel velit porttitor hendrerit. Sed ac quam sed dolor mattis ultricies at non lectus. Donec nulla ligula, dignissim t nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+		<div>Fusce ut lacus ac est rutrum iaculis. Pellentesque pellentesque ut  vel velit porttitor hendrerit. Sed ac quam sed dolor mattis ultricies at non lectus. Donec nulla ligula, dignissim t nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+		<div>Fusce ut lacus ac est rutrum iaculis. Pellentesque pellentesque ut  vel velit porttitor hendrerit. Sed ac quam sed dolor mattis ultricies at non lectus. Donec nulla ligula, dignissim t nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+	</div>
+	<div id="bg-clip">
+		<p>background clip:</p>
+		<div>Fusce ut lacus ac est rutrum iaculis. Pellentesque pellentesque ut  vel velit porttitor hendrerit. Sed ac quam sed dolor mattis ultricies at non lectus. Donec nulla ligula, dignissim t nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+		<div>Fusce ut lacus ac est rutrum iaculis. Pellentesque pellentesque ut  vel velit porttitor hendrerit. Sed ac quam sed dolor mattis ultricies at non lectus. Donec nulla ligula, dignissim t nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+		<div>Fusce ut lacus ac est rutrum iaculis. Pellentesque pellentesque ut  vel velit porttitor hendrerit. Sed ac quam sed dolor mattis ultricies at non lectus. Donec nulla ligula, dignissim t nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+	</div>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+
+</body>
+</html>

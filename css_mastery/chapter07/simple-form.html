@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simple Form</title>
+<link rel="stylesheet" href="../question.css" />
+<!-- <link rel="stylesheet" href="simple-form-original.css" /> -->
+<link rel="stylesheet" href="simple-form-myself.css" />
+</head>
+
+
+<body>
+
+<form id="comments_form" action="#" method="post">
+
+<fieldset>
+	<legend>Your Contact Details</legend>
+	<div>
+	<label for="author">Name: <em class="required">(Required)</em></label>
+	<input name="author" id="author" type="text" />
+	</div>
+	
+	<div>
+	<label for="email">Email Address:</label>
+	<input name="email" id="email" type="text" />
+	</div>
+	
+	<div>
+	<label for="url">Web Address:</label>
+	<input name="url" id="url" type="text" />
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Comments</legend>
+	<div>
+	<label for="text">Message: <em class="required">(Required)</em></label>
+	<textarea name="text" id="text" cols="20" rows="10"></textarea>
+	</div>
+</fieldset>
+
+<fieldset id="remember-me">
+	<legend>Remember Me</legend>
+		<div>
+		<label for="remember-yes"><input id="remember-yes" class="radio" name="remember" type="radio" value="yes" />Yes</label>
+		</div>
+		
+		<div>
+		<label for="remember-no"><input id="remember-no" class="radio" name="remember" type="radio" value="no" checked="checked" />No</label>
+		</div>
+</fieldset>
+
+<div>
+<input id="submit" class="submit" name="submit" type="submit"/>
+</div>
+
+
+</form>
+
+
+
+<div id="personal_footer">
+  <div>
+    <a href="../">上一级</a>
+  </div>
+  <h1>问题:</h1>
+  <ul>
+    <li>1.fieldset的上边框为什么会在padding内部？background-color也应用到该边框为止</li>
+    <li></li>
+    <li>2.(1)将textarea的width设置为100%,此时让textarea的盒子总宽度超出了父元素的宽度，这是怎么回事？<br>(2)按我的理解是：客户端(chrome)默认设置内边距、边框均为2px,外边距为0，此时将右外边距计算为负值，那么计算样式里为什么不显示margin的值呢？<br>(3)实验发现如果将margin显式设置为-1px，此时计算样式会有margin，但是width+padding+border-width+margin不等于父元素的width</li>
+  </ul>
+</div>
+</body>
+</html>

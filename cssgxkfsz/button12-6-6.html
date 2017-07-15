@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>button12-6-6</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.0.2/css/bootstrap.css" rel="stylesheet">
+	<style>
+		h1#home{
+			font-size: 30px;
+			margin: 10px auto;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+			clear: both;
+		}
+		div{
+			margin: 40px;
+		}
+	</style>
+</head>
+<body>
+	<button id="myLoading" class="btn btn-default" data-loading-text="loading">提交</button>
+	
+	<div class="btn-group">
+		<button type="button" class="btn btn-default">左行</button>
+		<button type="button" class="btn btn-default">直行</button>
+		<button type="button" class="btn btn-default">右行</button>
+	</div>
+
+	<div class="btn-group" data-toggle="buttons">
+		<button type="button" class="btn btn-default">
+			<input type="checkbox">左行
+		</button>
+		<button type="button" class="btn btn-default">
+			<input type="checkbox">直行
+		</button>
+		<button type="button" class="btn btn-default">
+			<input type="checkbox">右行
+		</button>
+	</div>
+
+	<div class="btn-group" data-toggle="buttons">
+		<button type="button" class="btn btn-default">
+			<input type="radio">左行
+		</button>
+		<button type="button" class="btn btn-default">
+			<input type="radio">直行
+		</button>
+		<button type="button" class="btn btn-default">
+			<input type="radio">右行
+		</button>
+	</div>
+
+
+	<h1 id="home"><a href="index.html">Home</a></h1>
+	<script src="http://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.0.2/js/bootstrap.js"></script>
+	<script>
+		$('#myLoading').click(function(){
+			var btn = $(this);
+			btn.button('loading');
+		});
+	</script>
+</body>
+</html>

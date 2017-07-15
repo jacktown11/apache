@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rotate</title>
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+		div.rotate>div{
+			width: 800px;
+			height: 200px;
+			
+			padding: 0;
+			margin: 20px auto;
+			border: 1px solid black;
+		}
+
+		div.rotate span{
+			display: inline-block;
+			border: 1px solid black;
+		}
+		div.rotate div:nth-child(1) img{
+			vertical-align: bottom;
+			transform: skew(30deg,10deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="rotate">
+		<div><span><img src="images/surf_s.jpg" alt="surf"></span></div>
+		<div><span><img src="images/surf_s.jpg" alt="surf"></span></div>
+	</div>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+</body>
+</html>

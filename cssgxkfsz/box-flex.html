@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-flex</title>
+	
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+		.container{
+			width: 80%;
+			height: 500px;
+			margin: auto;
+			display: -webkit-box;
+		}
+		.left{
+			-webkit-box-flex: 3;
+			background-color: red;
+		}
+		.main{
+			width: 600px;
+			background-color: green;
+		}
+		.right{
+			-webkit-box-flex: 4;
+			background-color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="left"></div>
+		<div class="main"></div>
+		<div class="right"></div>
+	</div>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+
+</body>
+</html>

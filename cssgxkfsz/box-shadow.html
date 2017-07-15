@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-shadow</title>
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+		div.shadow>div{
+			width: 120px;
+			height: 120px;
+			margin-bottom: 50px;
+			margin-left: 100px;
+			border: 1px solid black;
+		}
+		div.shadow div div{
+			width: 50px;
+			height: 50px;
+			margin: 20px;
+			border: 8px solid red;
+		}
+
+		div.shadow div:nth-child(1) div{
+			box-shadow: blue 10px 10px 30px 10px;
+		}
+		div.shadow div:nth-child(2) div{
+			box-shadow: blue 10px 10px 30px 10px inset;
+		}
+		div.shadow div:nth-child(3) div{
+			box-shadow: blue 0 0 0px 10px;
+		}
+		div.shadow div:nth-child(4) div{
+			box-shadow: blue 0 0 0px 10px inset;
+		}
+		div.shadow div:nth-child(5) div{
+			box-shadow: blue 0 0 40px 0px;
+		}
+		div.shadow div:nth-child(6) div{
+			box-shadow: blue 0 0 40px 0px inset;
+		}
+		div.shadow div:nth-child(7) div{
+			box-shadow: blue 0 0 0px 0px;
+		}
+		div.shadow div:nth-child(8) div{
+			box-shadow: blue 0 0 0px 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="shadow">
+		<div><div></div></div>
+		<div><div></div></div>
+		<div><div></div></div>
+		<div><div></div></div>	
+		<div><div></div></div>
+		<div><div></div></div>
+	</div>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+</body>
+</html>

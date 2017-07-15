@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rotate</title>
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+		div.rotate>div{
+			width: 200px;
+			height: 200px;
+			margin-bottom: 0px;
+			margin-left: 100px;
+			border: 1px solid black;
+		}
+
+		div.rotate img{
+			width: 100px;
+			height: 80px;
+		}
+		div.rotate div:nth-child(1) img{
+			-ms-transform: rotate(7deg);
+			-webkit-transform:rotate(7deg);
+			-moz-transform:rotate(7deg);
+			-o-transform:rotate(7deg);
+			transform:rotate(7deg);
+		}
+		div.rotate div:nth-child(2) img{
+			-ms-transform:rotateX(60deg);
+			-webkit-transform:rotateX(60deg);
+			-moz-transform:rotateX(60deg);
+			-o-transform:rotateX(60deg);
+			transform:rotateX(60deg);
+		}
+		div.rotate div:nth-child(3) img{
+			-ms-transform:rotateY(60deg);
+			-webkit-transform:rotateY(60deg);
+			-moz-transform:rotateY(60deg);
+			-o-transform:rotateY(60deg);
+			transform:rotateY(60deg);
+		}
+		div.rotate div:nth-child(4) img{
+			-ms-transform:rotate3d(1,-1,0,60deg);
+			-webkit-transform:rotate3d(1,-1,0,60deg);
+			-moz-transform:rotate3d(1,-1,0,60deg);
+			-o-transform:rotate3d(1,-1,0,60deg);
+			transform:rotate3d(1,-1,0,60deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="rotate">
+		<div><img src="images/surf_s.jpg" alt="surf"></div>
+		<div><img src="images/surf_s.jpg" alt="surf"></div>
+		<div><img src="images/surf_s.jpg" alt="surf"></div>
+		<div><img src="images/surf_s.jpg" alt="surf"></div>	
+		<div><img src="images/surf_s.jpg" alt="surf"></div>
+		<div><img src="images/surf_s.jpg" alt="surf"></div>
+	</div>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+</body>
+</html>

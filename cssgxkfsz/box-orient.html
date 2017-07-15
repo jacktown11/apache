@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-orient</title>
+	
+	<style>
+		h1#home{
+			margin:10px;
+			padding: 5px;
+			width: 100px;
+			border: 1px solid black;
+			color: black;
+		}
+		.container1{
+			width: 300px;
+			height: 300px;
+			margin: 30px;
+			display: -webkit-box;
+			-webkit-box-orient: horizonal;
+			-o-box-orient: horizonal;
+			-moz-box-orient: horizonal;
+			-ms-box-orient: horizonal;
+			box-orient: horizonal;
+		}
+		.container2{
+			width: 300px;
+			height: 300px;
+			margin: 30px;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-o-box-orient: vertical;
+			-moz-box-orient: vertical;
+			-ms-box-orient: vertical;
+			box-orient: vertical;
+		}
+		.div1{
+			-webkit-box-flex: 1;
+			-o-box-flex: 1;
+			-moz-box-flex: 1;
+			-ms-box-flex: 1;
+			box-flex: 1;
+			background-color: red;
+		}
+		.main{
+			-webkit-box-flex: 2;
+			-o-box-flex: 2;
+			-moz-box-flex: 2;
+			-ms-box-flex: 2;
+			box-flex: 2;
+			background-color: green;
+		}
+		.div2{
+			-webkit-box-flex: 1;
+			-o-box-flex: 1;
+			-moz-box-flex: 1;
+			-ms-box-flex: 1;
+			box-flex: 1;
+			background-color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container1">
+		<div class="div1"></div>
+		<div class="main"></div>
+		<div class="div2"></div>
+	</div>
+	<div class="container2">
+		<div class="div1"></div>
+		<div class="main"></div>
+		<div class="div2"></div>
+	</div>
+	<h1 id="home"><a href="index.html">Home</a></h1>
+
+</body>
+</html>
